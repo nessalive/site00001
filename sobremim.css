@@ -1,0 +1,108 @@
+:root{
+    --primeira-color: #367373;
+    --segunda-color: #73b8bf;
+    font-family: 'Lobster', cursive;
+    -webkit-font-smoothing: antialiased;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+
+.caixa{
+    margin: 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+@media only screen and (max-width: 600px){
+  .caixa{
+     flex-direction: column;
+  }
+}
+
+
+.foto{
+    border: 0.188rem dashed var(--segunda-color);
+    border-radius: 100px;
+}
+
+
+
+.me{
+    color: var(--primeira-color);
+    margin: 2.5rem;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px){
+  .me{
+     margin: 3.125rem;
+     
+  }
+}
+
+.nome{
+    color: var(--primeira-color);
+    border-right: 0.125rem solid var(--primeira-color);
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 600px){
+  .nome{
+     margin: 3.125rem;
+     
+  }
+}
+
+.typing-animation {
+    animation: blinkcursor 400ms steps(30) infinite normal, typing 3s steps(30) 1s normal both;
+  }
+  
+  @keyframes typing {
+    from{
+      width:0;
+    }
+    to{
+      width:7em;
+    }
+  }
+  
+  @keyframes blinkcursor {
+    from{
+      border-right-color: rbga(255, 255, 255, 0.75);
+    }
+    to{
+      border-right-color: transparent;
+    }
+  }
+
+.icon{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media only screen and (max-width: 600px){
+  .icon{
+     margin-bottom: 100px;
+     
+  }
+}
